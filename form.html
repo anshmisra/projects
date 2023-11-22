@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>Ansh Misra</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body id="formbody">
+        <form action="results.html" method="get">
+            <h1>What do your TV show preferences say about you?</h1>
+            <p>Your favorite shows say a lot about you. Answer these questions, so we can find out who you really are!</p>
+            
+            <div id="formcolor"> 
+                <div>
+                    <label for="fname">What is your name?</label>
+                        <input id="inputbox" type="text" id="fname" name="fname" required>
+                </div>
+            
+                <div id="shows">
+                    <label for="amount">How many TV shows do you watch?</label>
+                        <input id="inputbox" type="number" id="amount" name="amount" step="1" required>
+                </div>
+
+                <div>
+                    <p>Which TV genres do you enjoy?</p>
+                    <div>
+                        <input type="checkbox" id="comedy" name="genres" value="comedy">
+                        <label for="comedy">Comedy</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="drama" name="genres" value="drama">
+                        <label for="drama">Drama</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="action-advent" name="genres" value="action-advent">
+                        <label for="action-advent">Action & Adventure</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horror" name="genres" value="horror">
+                        <label for="horror">Horror</label>
+                    </div>
+                </div>
+
+                <div>
+                    <p>What's your favorite medical TV show?</p>
+                    <div>
+                        <input type="radio" id="greys" name="medical" value="greys">
+                        <label for="greys">Grey's Anatomy</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="er" name="medical" value="er">
+                        <label for="er">ER</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="chicago-med" name="medical" value="chicago-med">
+                        <label for="chicago-med">Chicago Med</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="scrubs" name="medical" value="scrubs">
+                        <label for="scrubs">Scrubs</label>
+                    </div>
+                </div>
+
+                <div>
+                    <p>What's your favorite thriller TV show?</p>
+                    <div>
+                        <input type="radio" id="handmaid" name="thriller" value="handmaid">
+                        <label for="handmaid">The Handmaid's Tale</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="keve" name="thriller" value="keve">
+                        <label for="keve">Killing Eve</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="ozark" name="thriller" value="ozark">
+                        <label for="ozark">Ozark</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="cminds" name="thriller" value="cminds">
+                        <label for="cminds">Criminal Minds</label>
+                    </div>
+                </div>
+
+                <div>
+                    <p>What's your sitcom TV show?</p>
+                    <div>
+                        <input type="radio" id="office" name="sitcom" value="office">
+                        <label for="office">The Office</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="parksrec" name="sitcom" value="parksrec">
+                        <label for="parksrec">Parks and Recreation</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="modfam" name="sitcom" value="modfam">
+                        <label for="modfam">Modern Family</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="comm" name="sitcom" value="comm">
+                        <label for="comm">Community</label>
+                    </div>
+                </div>
+
+                <div class="dropdown-menu" id="friendQ">
+                    <label for="friendchar" id="friendscharacter">Who is your favorite Friends character?</label> 
+                <select name="friendchar" id="friends" onchange="window.location.href=this.value"> 
+                    <option class="character" value="monica" name="friendchar">Monica Geller</option> 
+                    <option class="character" value="ross" name="friendchar">Ross Geller</option> 
+                    <option class="character" value="chandler" name="friendchar">Chandler Bing</option>
+                    <option class="character" value="joey" name="friendchar">Joey Tribianni</option>
+                    <option class="character" value="phoebe" name="friendchar">Phoebe Buffay</option> 
+                    <option class="character" value="rachel" name="friendchar">Rachel Green</option> 
+                </select>
+                </div>
+
+                <div>
+                    <input class="submitbtn" id="submit-btn" type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
